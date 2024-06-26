@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>Guessing Game</h1>
+            <h4>Guess a number between 1 and 100.</h4>
+        </div>
+        <div class="entry">
+            <form id="guess-form">
+                <label for="difficulty_setting">Choose difficulty level:</label>
+                <select name="difficulty" id="difficulty_setting" onchange="setDifficulty(this.value)">
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                </select>
+                <label for="guess">Guess a number:</label>
+                <input type="text" id="guess" />
+                <button type="submit" id="btn">Guess</button>
+            </form>
+        </div>
+        <p class="wrong"></p>
+        <p id="guesses">No. of guesses: 0</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
