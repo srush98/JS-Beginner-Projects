@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.game-container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Game Board */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 2em;
+    transition: background-color 0.3s ease;
+    color: #333;
+}
+
+.cell:hover {
+    background-color: #eee;
+}
+
+/* Game Info */
+.game-info {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.player {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.status {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Buttons */
+#resetButton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 40px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#resetButton:hover {
+    background-color: darkgreen;
+}
+
+/* .win-line {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+}
+
+.win-row.win-line {
+    top: 50%;
+    left: calc((50% - 150px) / 2);
+}
+
+.win-col.win-line {
+    top: calc((50% - 150px) / 2);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.win-diag.win-line {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
