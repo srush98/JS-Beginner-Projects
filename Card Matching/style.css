@@ -33,7 +33,7 @@ body {
 }
 
 .card.flipped {
-    background-color: #dcdcdc;
+    background-color: darkgreen;
 }
 
 .card:hover {
